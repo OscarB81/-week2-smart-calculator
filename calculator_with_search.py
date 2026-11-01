@@ -108,12 +108,12 @@ def main():
         print("4. Learn about search methods")
         print("5. Exit")
 
-        selection = input("Choose an option (1-5): ")
+        selection = input("Choose an option (1-5): ").strip()
 
         if selection == "1":
             try:
                 first_number = float(input("Enter the first number: "))
-                operator = input("Enter an arithmetic operator (+, -, *, /): ")
+                operator = input("Enter an arithmetic operator (+, -, *, /): ").strip()
                 second_number = float(input("Enter the second number: "))
             except ValueError:
                 print("Please enter valid numbers.")
